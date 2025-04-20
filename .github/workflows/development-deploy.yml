@@ -25,7 +25,7 @@ jobs:
           fi
           echo "✅ Secrets look fine."
 
-      - name: Deploy and Restart on EC2 via SSH
+      - name: Deploy and Build on EC2 via SSH
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
