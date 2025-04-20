@@ -12,13 +12,13 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (_req, res) => {
-  res.send('API is running...');
+  res.send('API is running 2 ...');
+  console.log("API is running 2")
 });
 app.use('/api/users', userRoutes);
 app.use('/api/collections', collectionRoutes);
 app.use('/api/recommendations', recommendationRoutes)
 app.use('/api/collection_recommendations', collectionRecommendationRoutes)
-
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
