@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get('/', (_req, res) => {
   res.send('API is running 2 ...');
-  console.log("API is running 2")
+  console.log("API is running 2 final checks ✅")
 });
 app.use('/api/users', userRoutes);
 app.use('/api/collections', collectionRoutes);
