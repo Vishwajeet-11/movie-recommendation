@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (_req, res) => {
-  res.send('API is running...');
+  res.send('API is running 2 ...');
   console.log("API is running 2")
 });
 app.use('/api/users', userRoutes);
